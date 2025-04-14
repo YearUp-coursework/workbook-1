@@ -22,8 +22,18 @@ public class payroll {
         System.out.println("Please input your hours worked: ");
         double hoursWorked = properPayroll.nextDouble();
 
-        //Calculates their gross earnings by multiplying the hours they worked and their wage
-        double grossPay = hourlyWage * hoursWorked;
+        // Creates a conditional assigned to the variable grossPay where if the user inputs a number above 40 they will get their regular wage as well as overtime pay
+        double grossPay;
+
+        if (hoursWorked > 40) {
+            double regularWages = 40 * hourlyWage;
+            double overtimePay = (hoursWorked - 40) + (hourlyWage * 1.5);
+
+            grossPay = regularWages + overtimePay;
+        } else {
+            grossPay = hoursWorked * hourlyWage;
+        }
+
 
         //Outputs text that explains how much they will be earning given the amount of hours they've worked
         System.out.printf("Hi! %s, because you worked %.0f hours this week. Your gross pay will be $%.0f.", name, hoursWorked, grossPay);
