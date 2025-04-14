@@ -21,7 +21,7 @@ public class inputExample {
 
 
 
-        double product =number1 + number2;
+        double product = number1 + number2;
         System.out.printf("The product of %.2f and %.2f is %.2f", number1, number2, product);
         // System.out.println("The product of " + number1 + " and " + number2 + " is " + product);
     }
