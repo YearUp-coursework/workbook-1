@@ -83,8 +83,8 @@ public class MathApp {
          * Uses +1 to indicate a change in range from 0-9 to 1-10
          * Outputs a random number between 1 and 10
          */
-        int randomNumber = (int)(Math.random() * 10) + 1;
+        double randomNumber = Math.random();
 
-        System.out.println(randomNumber);
+        System.out.println("Heres your random number: " + randomNumber);
     }
 }
