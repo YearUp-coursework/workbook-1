@@ -25,7 +25,7 @@ public class payroll {
         //Calculates their gross earnings by multiplying the hours they worked and their wage
         double grossPay = hourlyWage * hoursWorked;
 
-        //Outputs text that explains how much they will be earning given the amount of hours they've worked 
+        //Outputs text that explains how much they will be earning given the amount of hours they've worked
         System.out.printf("Hi! %s, because you worked %.0f hours this week. Your gross pay will be $%.0f.", name, hoursWorked, grossPay);
     }
 }
