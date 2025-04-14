@@ -13,6 +13,18 @@ public class Main {
         System.out.println(greeting);
 
 
+        float taxRate = 0.15F;
+
+        long aLargeNumber = 2222222L;
+
+        long aLong;
+        int aint;
+
+        aLong = 7_000_000_000_000L;
+        aint = (int) aLong;
+
+        System.out.println(aint);
+
     }
 
 
