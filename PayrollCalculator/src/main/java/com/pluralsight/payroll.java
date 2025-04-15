@@ -9,17 +9,16 @@ public class payroll {
         Scanner properPayroll = new Scanner(System.in);
 
         //Takes an input to ask for the users name
-        System.out.println("What is your name?");
-        String name;
-        name = properPayroll.nextLine();
+        System.out.print("What is your name?");
+        String name = properPayroll.nextLine();
 
         //Takes a double point input to get the users hourly wage
-        System.out.println("Please input your hourly pay rate: ");
+        System.out.print("Please input your hourly pay rate: ");
         double hourlyWage = properPayroll.nextDouble();
         properPayroll.nextLine();
 
         //Takes another double point input to get the amount of hours the user worked
-        System.out.println("Please input your hours worked: ");
+        System.out.print("Please input your hours worked: ");
         double hoursWorked = properPayroll.nextDouble();
 
         // Creates a conditional assigned to the variable grossPay where if the user inputs a number above 40 they will get their regular wage as well as overtime pay
