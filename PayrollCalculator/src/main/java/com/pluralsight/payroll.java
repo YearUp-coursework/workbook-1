@@ -9,7 +9,7 @@ public class payroll {
         Scanner properPayroll = new Scanner(System.in);
 
         //Takes an input to ask for the users name
-        System.out.print("What is your name?");
+        System.out.print("Please input your name: ");
         String name = properPayroll.nextLine();
 
         //Takes a double point input to get the users hourly wage
