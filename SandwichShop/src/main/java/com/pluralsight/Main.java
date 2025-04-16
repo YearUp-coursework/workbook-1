@@ -13,17 +13,15 @@ public class Main {
 
         double sandwichCost;
         if (sandwichSize.equalsIgnoreCase("regular")) {
-
             sandwichCost = 5.45;
 
         } else if (sandwichSize.equalsIgnoreCase("large")) {
-
             sandwichCost = 8.95;
 
         } else {
-
-            sandwichCost = 5.45;
-
+            System.out.println("Sorry we don't have that size available.");
+            System.exit(0);
+            
         }
 
         System.out.printf("Would you like to get your %s sized sandwich loaded? \n Loaded regular: +1.00 \n Loaded large: +1.75\n", sandwichSize);
@@ -31,29 +29,26 @@ public class Main {
 
         if (loadedSandwich.equalsIgnoreCase("yes")) {
             if (sandwichSize.equalsIgnoreCase("regular")) {
-
                 sandwichCost += 1.00;
 
             } else if (sandwichSize.equalsIgnoreCase("large")) {
-
                 sandwichCost += 1.75;
 
-            } else sandwichCost = sandwichCost;
+            }
         }
         // Prompts user for their age and applies a discount based on their age
 
         System.out.println("We're having a promotional discount going on right now based on your age! Do you mind telling me how old you are?");
         String ageInput = scanner.nextLine();
         int customersAge = Integer.parseInt(ageInput);
-        if (customersAge <= 17) {
 
+        if (customersAge <= 17) {
             sandwichCost = sandwichCost * .9;
 
         } else if (customersAge >= 65) {
-
             sandwichCost = sandwichCost * .8;
 
-        } else sandwichCost = sandwichCost;
+        }
 
         System.out.printf("Your sandwich will be $%.2f", sandwichCost);
     }
