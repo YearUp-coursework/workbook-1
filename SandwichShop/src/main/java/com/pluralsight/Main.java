@@ -11,7 +11,7 @@ public class Main {
         System.out.println("Hi! Welcome to the sandwich shop, what size sandwich would you like? \n Regular: 5.45 \n Large: 8.95");
         String sandwichSize = scanner.nextLine();
 
-        double sandwichCost;
+        double sandwichCost = 0;
         if (sandwichSize.equalsIgnoreCase("regular")) {
             sandwichCost = 5.45;
 
