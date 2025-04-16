@@ -54,7 +54,7 @@ public class Main {
             sandwichCost = sandwichCost * .8;
 
         } else sandwichCost = sandwichCost;
-        
+
         System.out.printf("Your sandwich will be %.2f", sandwichCost);
     }
 }
