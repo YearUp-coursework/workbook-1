@@ -8,7 +8,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         // Prompts user for the size of the sandwich and sets a price based on that sandwich size
-        System.out.println("Hi! Welcome to the sandwich shop, what size sandwich would you like?");
+        System.out.println("Hi! Welcome to the sandwich shop, what size sandwich would you like? \n Regular: 5.45 \n Large: 8.95");
         String sandwichSize = scanner.nextLine();
 
         double sandwichCost;
@@ -26,7 +26,7 @@ public class Main {
 
         }
 
-        System.out.printf("Would you like to get your %s sized sandwich loaded? \n", sandwichSize);
+        System.out.printf("Would you like to get your %s sized sandwich loaded? \n Loaded regular: +1.00 \n Loaded large: +1.75\n", sandwichSize);
         String loadedSandwich = scanner.nextLine();
 
         if (loadedSandwich.equalsIgnoreCase("yes")) {
@@ -55,6 +55,6 @@ public class Main {
 
         } else sandwichCost = sandwichCost;
 
-        System.out.printf("Your sandwich will be %.2f", sandwichCost);
+        System.out.printf("Your sandwich will be $%.2f", sandwichCost);
     }
 }
