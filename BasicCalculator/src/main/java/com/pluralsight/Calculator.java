@@ -1,4 +1,5 @@
 package com.pluralsight;
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -65,11 +66,11 @@ public class Calculator {
                             operation = "product";
                         }
                         case "/" -> {
-                            if(num2 == 0){
+                            if (num2 == 0) {
                                 System.out.println("Divide by 0 error.");
                                 validOperator = false;
 
-                            }else {
+                            } else {
                                 result = num1 / num2;
                                 operation = "quotient";
 
